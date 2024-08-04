@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import url(styles/header.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor-de-fundo: #EBECEE;
+    --branco-principal: #FFFFFF;
+    --laranja-fonte: #EB9B00;
+    --azul-fonte: #002F52;
+    --cor-degrade1: #002F52;
+    --cor-degrade2: #326589;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
