@@ -14,8 +14,10 @@
     --azul-fonte: #002F52;
     --cor-degrade1: #002F52;
     --cor-degrade2: #326589;
+    --fonte-principal: "Poppins", sans-serif;
 }
 
 body{
     background-color: var(--cor-de-fundo);
 }
+

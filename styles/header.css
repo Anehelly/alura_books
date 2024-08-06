@@ -5,6 +5,7 @@
     --azul-fonte: #002F52;
     --cor-degrade1: #002F52;
     --cor-degrade2: #326589;
+    --fonte-principal: "Poppins", sans-serif;
 }
 
 .cabeçalho__menu-hamburguer{
@@ -21,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container{
@@ -30,4 +32,40 @@
 
 .container__imagem{
     padding: 1em;
+}
+
+#itens{
+    display: none;
+    position: absolute;
+    top: 100%; /* Coloca o menu logo abaixo do cabeçalho */
+    left: 0;
+    
+}
+
+#itens ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    
+}
+
+#itens li {
+    padding: 10px 0;  
+    color: var(--laranja-fonte);
+    line-height: 30px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    
+}
+
+#itens li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+a{
+    text-decoration: none;
+    color: var(--azul-fonte);
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
 }

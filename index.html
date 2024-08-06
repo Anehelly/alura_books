@@ -6,10 +6,20 @@
     <title>AluraBooks</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
     <header class="cabeçalho">
-     <div class="container"> 
-         <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+     <div class="container">         
+         <span  class="cabeçalho__menu-hamburguer container__imagem"  onclick="clickMenu()"></span>   
+         <menu id="itens" >
+            <ul>
+                <li>Categorias</li>
+                <li><a href="#">PROGRAMAÇÃO</a></li>
+                <li><a href="#">FRONT-END</a></li>
+                <li><a href="#">INFRAESTRUTURA</a></li>
+                <li><a href="#">BUSINESS</a></li>
+                <li><a href="#">DESIGN & UX</a></li>
+            </ul>
+         </menu>      
          <img src="imagens/Logo.svg" alt="Logo AluraBooks" class="container__imagem">
      </div>
      <div class="container">
@@ -18,6 +28,18 @@
          <a href="#"><img src="imagens/Usuario.png" alt="ícone Usuários" class="container__imagem"></a>
      </div>
     </header>
-   
+
+    <script>
+        function clickMenu() {
+            var itens = document.getElementById('itens');
+            if (itens.style.display === 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+    </script>
+       
+
 </body>
 </html>
