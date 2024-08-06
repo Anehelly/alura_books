@@ -12,12 +12,12 @@
          <span  class="cabeçalho__menu-hamburguer container__imagem"  onclick="clickMenu()"></span>   
          <menu id="itens" >
             <ul>
-                <li>Categorias</li>
-                <li><a href="#">PROGRAMAÇÃO</a></li>
-                <li><a href="#">FRONT-END</a></li>
-                <li><a href="#">INFRAESTRUTURA</a></li>
-                <li><a href="#">BUSINESS</a></li>
-                <li><a href="#">DESIGN & UX</a></li>
+                <li class="itens__titulo">Categorias</li>
+                <li class="itens__links"><a href="#">PROGRAMAÇÃO</a></li>
+                <li class="itens__links"><a href="#">FRONT-END</a></li>
+                <li class="itens__links"><a href="#">INFRAESTRUTURA</a></li>
+                <li class="itens__links"><a href="#">BUSINESS</a></li>
+                <li class="itens__links"><a href="#">DESIGN & UX</a></li>
             </ul>
          </menu>      
          <img src="imagens/Logo.svg" alt="Logo AluraBooks" class="container__imagem">
@@ -31,14 +31,18 @@
 
     <script>
         function clickMenu() {
-            var itens = document.getElementById('itens');
+            var itens = document.getElementById('itens');         
+
             if (itens.style.display === 'block') {
                 itens.style.display = 'none';
+                ;
             } else {
                 itens.style.display = 'block';
+                ;
             }
         }
     </script>
+    
        
 
 </body>

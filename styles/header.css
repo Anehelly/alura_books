@@ -2,20 +2,27 @@
     --cor-de-fundo: #EBECEE;
     --branco-principal: #FFFFFF;
     --laranja-fonte: #EB9B00;
+    --laranja-hover: #c66c1d;
     --azul-fonte: #002F52;
     --cor-degrade1: #002F52;
     --cor-degrade2: #326589;
     --fonte-principal: "Poppins", sans-serif;
+    
+   
 }
 
-.cabeçalho__menu-hamburguer{
-    width: 24px;
+.cabeçalho__menu-hamburguer {
+    background-image: url('../imagens/menuhamburguerpreto.png');
+    background-size: cover;  
+    width: 24px; /* Ajuste o tamanho conforme necessário */
     height: 24px;
-    background-image: url(../imagens/Menu.svg);
     display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
+    cursor: pointer;
+    margin-left: 15px;
 }
+
+
+
 
 .cabeçalho{
     background-color:var(--branco-principal) ;
@@ -23,6 +30,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    height: 70px;
 }
 
 .container{
@@ -32,6 +40,8 @@
 
 .container__imagem{
     padding: 1em;
+    
+    
 }
 
 #itens{
@@ -39,33 +49,27 @@
     position: absolute;
     top: 100%; /* Coloca o menu logo abaixo do cabeçalho */
     left: 0;
+    background-color: var(--branco-principal);
+    width: 300px;
+   
     
 }
 
-#itens ul {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    
+.itens__links, .itens__titulo{
+    padding: 1em;
+    background-color: var(--branco-principal);
 }
 
-#itens li {
-    padding: 10px 0;  
+.itens__titulo{
     color: var(--laranja-fonte);
-    line-height: 30px;
-    font-weight: 700;
-    font-family: var(--fonte-principal);
-    
-}
-
-#itens li:last-child {
-    border-bottom: none; /* Remove a linha do último item */
 }
 
 a{
-    text-decoration: none;
-    color: var(--azul-fonte);
-    line-height: 30px;
-    font-weight: 400;
-    font-family: var(--fonte-principal);
+   color: var(--azul-fonte);
+   text-decoration: none;
 }
+
+a:hover{
+    color: var(--laranja-hover);
+}
+
