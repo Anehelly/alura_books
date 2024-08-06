@@ -58,15 +58,19 @@
 .itens__links, .itens__titulo{
     padding: 1em;
     background-color: var(--branco-principal);
+    
 }
 
 .itens__titulo{
     color: var(--laranja-fonte);
+    font-weight: 700;
+    font-family: var(--fonte-principal);
 }
 
 a{
    color: var(--azul-fonte);
    text-decoration: none;
+   font-family: var(--fonte-principal);
 }
 
 a:hover{
