@@ -10,7 +10,7 @@
 }
 
 :root{
-    --cor-de-fundo: #EBECEE;
+    --cor-de-fundo: #cbcdcf;
     --branco-principal: #FFFFFF;
     --laranja-fonte: #EB9B00;
     --laranja-hover: #c66c1d;
@@ -22,6 +22,7 @@
 
 body{
     background-color: var(--cor-de-fundo);
+    height: 100%;
 }
 
 .banner{
@@ -66,5 +67,24 @@ body{
     gap: 5px;
   }
 
+.lancamentos{
+    background-color: var(--branco-principal);
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family: var(--fonte-principal);
+    color: var(--laranja-fonte);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
 
+
+
+.carrosel__slides{
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
 
