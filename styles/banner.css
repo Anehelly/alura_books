@@ -1,0 +1,59 @@
+:root{
+    --cor-de-fundo: #EBECEE;
+    --branco-principal: #FFFFFF;
+    --laranja-fonte: #EB9B00;
+    --laranja-hover: #c66c1d;
+    --azul-fonte: #002F52;
+    --cor-degrade1: #002F52;
+    --cor-degrade2: #326589;
+    --fonte-principal: "Poppins", sans-serif;
+    
+   
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #002F52, #053d68, #2a5675 );
+    width:100%;
+    height: 215px;    
+}
+
+.banner__titulo{
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.banner__paragrafo{
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.banner__pesquisa{
+    text-decoration: none;
+    display: flex;    
+    text-align: center;  
+    border: 1px solid var(--branco-principal);
+    border-radius: 50px;
+    padding: 10px;
+    width: 75%;  
+    gap: 5px;
+    background-color: transparent;
+    color: var(--branco-principal)
+  }
+
+.banner__pesquisa::placeholder{
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    font-size: 14px;
+    font-weight: 400;
+    background: url(../imagens/Vector.svg) no-repeat;
+    background-position: 1em;
+}
