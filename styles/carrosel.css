@@ -1,0 +1,33 @@
+.carrosel__titulo{  
+    font-family: var(--fonte-principal);
+    color: var(--laranja-fonte);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    background-color: var(--branco-principal);
+    padding: 1em 0 0.5em 0;
+}
+
+
+
+.carrosel__slides{
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-slide img{
+    width: 100%;
+
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
