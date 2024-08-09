@@ -35,9 +35,7 @@
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__paragrafo">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input class="banner__pesquisa" type="search" name="banner__pesquisa" placeholder=" Qual será sua próxima leitura?" >
-    </section>
-
-    
+    </section>    
     
     <section class="carrosel">
         <h2 class="carrosel__titulo">ÚLTIMOS LANÇAMENTOS </h2>
@@ -47,14 +45,30 @@
         <div class="swiper-slide"><img src="imagens/image 25 (1).svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
         <div class="swiper-slide"><img src="imagens/image 26 (1).svg" alt="Livro sobre liderança em Design da Alura Books"></div>
         <div class="swiper-slide"><img src="imagens/image 27 (1).svg" alt="Livro sobre JavaScript Assertivo da Alura Books"></div>
-        </div>
-    
+        </div>  
    
-  
-    
     <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
+    <div class="swiper-button-next"></div>  
+    </section>
+
+    <section class="card">
+
+        <div class="card__principal">
+            <h3 class="card__introducao">Talvez você também se interesse por...</h3>
+            <h2 class="card__titulo">Angular 11 e <br> Firebase</h2>
+            <p class="card__paragrafo">Construindo uma aplicação integrada com a plataforma do Google.</p>
+
+            <div class="container">
+                <a href="#"><img class="container__imagem" src="imagens/Favoritos.svg" alt="Ícone Favoritos" ></a>
+                <a href="#"><img class="container__imagem" src="imagens/Sacola.png" alt="Ícone Sacola de compras"></a>
+            </div>
+
+        </div>
+
+        <div class="card__secundario">
+            <img class="card__imagem" src="imagens/Perfil-escritora 2.svg" alt="Logo Angular">
+            <a class="card__link" href="#">Saiba mais</a>
+        </div>
     </section>
     
 
@@ -73,7 +87,7 @@
         }
     </script>
     
-       
+    <!--Carrosel-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
